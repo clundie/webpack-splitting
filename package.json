@@ -1,0 +1,30 @@
+{
+  "dependencies": {
+    "babel": "5.1.13",
+    "babel-core": "5.1.13",
+    "babel-loader": "5.0.0",
+    "babel-runtime": "5.1.13",
+    "express": "4.12.3",
+    "fs-extra": "0.18.2",
+    "minimist": "1.1.0",
+    "react": "0.13.2",
+    "react-hot-loader": "1.2.4",
+    "react-proxy-loader": "0.3.4",
+    "webpack": "1.8.11",
+    "webpack-dev-server": "1.8.2"
+  },
+  "description": "Webpack code splitting demo",
+  "engineStrict": true,
+  "engines": {
+    "node": ">=0.12.0"
+  },
+  "name": "webpack-splitting",
+  "private": true,
+  "scripts": {
+    "build": "node_modules/.bin/babel-node build.js",
+    "production": "node_modules/.bin/babel-node build.js --production",
+    "start": "node_modules/.bin/babel-node server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "version": "1.0.0-latest"
+}
