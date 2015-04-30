@@ -2,6 +2,10 @@
 
 Demo project that shows Webpack code splitting with React.
 
+This helps you break up large web front end projects into multiple small
+JavaScript resources that are downloaded on demand. CSS can be bundled in as
+well.
+
 - The code for `View1` and `View2` is split into separate `.js` resources, so
   their code is not downloaded by the browser until the user navigates to them.
   Those modules will be very tiny, since Webpack can deduplicate and remove
