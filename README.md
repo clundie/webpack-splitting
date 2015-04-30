@@ -8,7 +8,7 @@ well.
 
 - The code for `View1` and `View2` is split into separate `.js` resources, so
   their code is not downloaded by the browser until the user navigates to them.
-  Those modules will be very tiny, since Webpack can deduplicate and remove
+  Those modules can be tiny, since Webpack can deduplicate and remove
   modules that are shared with the main module (mainly, React, and also the
   Babel runtime).
 
