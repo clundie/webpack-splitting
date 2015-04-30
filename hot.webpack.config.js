@@ -6,14 +6,14 @@ module.exports = {
   entry: [
     "webpack-dev-server/client?http://localhost:3000",
     "webpack/hot/dev-server",
-    "./src/js/main",
+    "./src/main",
   ],
 
   output: {
     path: path.join(__dirname, "build"),
     filename: "main.js",
     publicPath: "/",
-    contentBase: "./src/html/",
+    contentBase: "./src/static/",
   },
 
   plugins: [
@@ -35,6 +35,14 @@ module.exports = {
         test: /\.jsx$/,
         exclude: /node_modules/,
         loaders: ["react-hot", "babel-loader?optional=runtime"],
+      },
+      {
+        test: /\.css$/,
+        loaders: ["style-loader", "css-loader"],
+      },
+      {
+        test: /\.less$/,
+        loaders: ["style-loader", "css-loader", "less-loader"],
       },
     ],
   },

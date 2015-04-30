@@ -2,7 +2,7 @@ function main(args) {
   const FS = require("fs-extra");
   FS.removeSync("build");
   FS.mkdirsSync("build");
-  FS.copySync("src/html/index.html", "build/index.html");
+  FS.copySync("src/static/index.html", "build/index.html");
   runOrDie(
     "node_modules/.bin/webpack",
     [

@@ -1,6 +1,7 @@
 const React = require("react");
 const View1 = require("./View1Proxy");
 const View2 = require("./View2Proxy");
+require("./App.less");
 
 function viewWithIndex(index) {
   switch (index) {

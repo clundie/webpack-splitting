@@ -10,6 +10,11 @@ Demo project that shows Webpack code splitting with React.
 
 - The React components hot-reload when you edit their `.jsx` source code.
 
+- The CSS stylesheet for the main view is placed into a `.css` resource. The
+  styles for `View1` and `View2`, however, are bundled into the respective
+  `.js` resources, so the user gets the benefit of not downloading styles until
+  needed.
+
 See:
 
 react-proxy-loader:
