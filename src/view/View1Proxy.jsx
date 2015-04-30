@@ -1,5 +1,5 @@
 const React = require("react");
-const View1 = require("react-proxy!./View1");
+const View1 = require("react-proxy?name=View1!./View1");
 const View1Proxy = React.createClass({
   mixins: [View1.Mixin],
   renderUnavailable: () => {
