@@ -15,7 +15,7 @@ class View2 extends React.Component {
         <h2>
           View2
         </h2>
-        <div ref="editor"></div>
+        <div key="editor" ref="editor"></div>
       </div>
     );
   }
